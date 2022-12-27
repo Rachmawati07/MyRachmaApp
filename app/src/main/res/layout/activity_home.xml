@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sunflo">
+
+    <!-- - text view untuk text home
+             - Mempunyai id berupa textHome
+             - Mempunyai ukuran teks sebesar 70sp
+             - Tulisan dibold
+             - Mempunyai font family berypa serif-monospace
+             - Mempunyai warna dengan kode warna #0C0C0C
+       -->
+    <TextView
+        android:id="@+id/textHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:fontFamily="serif-monospace"
+        android:text="HOME"
+        android:textColor="#0C0C0C"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- - Button untuk menu button read news
+         - Mempunyai id berupa btnReadnews
+         - Mempunyai ukuran teks sebesar 20sp
+         - Tulisan dibold
+    -->
+    <Button
+        android:id="@+id/btnReadnews"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/btn_readnews"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#2d1c0f"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHome" />
+
+    <!-- - Button untuk menu home pada button search book
+         - Mempunyai id berupa btnBook
+         - Mempunyai ukuran teks sebesar 20sp
+         - Tulisan dibold
+    -->
+    <Button
+        android:id="@+id/btnBook"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/btn_book"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#2d1c0f"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReadnews" />
+
+    <!-- - Button untuk menu home pada button profile
+         - Mempunyai id berupa btnProfile
+         - Mempunyai ukuran teks sebesar 20sp
+         - Tulisan dibold
+    -->
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/btn_profile"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#2d1c0f"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBook"
+        app:layout_constraintVertical_bias="0.032" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

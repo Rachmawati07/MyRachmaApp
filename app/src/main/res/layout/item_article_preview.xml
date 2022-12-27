@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        style="@style/CustomThemeNews">
+
+        <!-- Merupakan tampilan untuk menampilkan gambar
+             - Mempunyai id berupa article_image_tv
+             - Mempunyai warna background dengan kode warna #FAF6F6
+        -->
+        <ImageView
+            android:id="@+id/article_image_iv"
+            android:layout_width="160dp"
+            android:layout_height="90dp"
+            android:background="#FAF6F6"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Merupakan tampilan untuk menampilkan teks
+             - Mempunyai id berupa source_tv
+             - Mempunyai tulisan teks berupa SOURCE
+             - Mempunyai warna teks yang berasal dari color
+         -->
+        <TextView
+            android:id="@+id/source_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="SOURCE"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/article_image_iv" />
+
+        <!-- Merupakan tampilan untuk menampilkan teks
+             - Mempunyai id berupa title_tv
+             - Mempunyai tulisan teks berupa TITLE
+             - Mempunyai warna teks yang berasal dari color
+        -->
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="TITLE"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/article_image_iv"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Merupakan tampilan untuk menampilkan teks
+             - Mempunyai id berupa description_tv
+             - Mempunyai tulisan teks berupa DESCRIPTION
+             - Mempunyai style yang berupa AppTheme
+        -->
+        <TextView
+            android:id="@+id/description_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:text="DESCRIPTION"
+            style="@style/AppTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/article_image_iv"
+            app:layout_constraintTop_toBottomOf="@+id/title_tv" />
+
+        <!-- Merupakan tampilan untuk menampilkan teks
+             - Mempunyai id berupa published_at_tv
+             - Mempunyai tulisan teks berupa PUBLISHED AT
+             - Mempunyai warna teks yang berasal dari color
+        -->
+        <TextView
+            android:id="@+id/published_at_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="PUBLISHED AT"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/source_tv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <!-- Merupakan tampilan untuk menampilkan thumbnail
+             - Mempunyai id berupa thumbnail
+             - Mempunyai warna background yang berasal dari color
+             - Mempunyai lebar sebesar 160dp
+             - Mempunyai tinggi sebesar 90dp
+         -->
+        <View
+            android:id="@+id/thumbnail"
+            android:layout_width="@dimen/placeholderImageWidth"
+            android:layout_height="@dimen/placeholderImageHeight"
+            android:layout_marginTop="@dimen/padding_10"
+            android:background="@color/background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!-- Merupakan tampilan untuk menampilkan thumbnail
+             - Mempunyai id berupa view
+             - Mempunyai warna background yang berasal dari color
+             - Mempunyai lebar sebesar 150dp
+             - Mempunyai tinggi sebesar 16dp
+         -->
+        <View
+            android:id="@+id/view"
+            android:layout_width="150dp"
+            android:layout_height="@dimen/placeholderTextHeight"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="@dimen/padding_10"
+            android:background="@color/background"
+            app:layout_constraintStart_toEndOf="@+id/thumbnail"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Merupakan tampilan untuk menampilkan thumbnail
+             - Mempunyai id berupa thumnail
+             - Mempunyai warna background yang berasal dari color
+             - Mempunyai lebar sebesar 16dp
+             - Mempunyai tinggi sebesar 12dp
+        -->
+        <View
+            android:layout_width="100dp"
+            android:layout_height="@dimen/placeholderTextHeight"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="@dimen/padding_10"
+            android:background="@color/background"
+            app:layout_constraintStart_toEndOf="@+id/thumbnail"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <!-- Merupakan tampilan untuk menampilkan thumbnail
+             - Mempunyai id berupa view2
+             - Mempunyai warna background yang berasal dari color
+             - Mempunyai lebar sebesar 50dp
+             - Mempunyai tinggi sebesar 16dp
+        -->
+        <View
+            android:id="@+id/view2"
+            android:layout_width="50dp"
+            android:layout_height="@dimen/placeholderTextHeight"
+            android:layout_marginTop="@dimen/padding_10"
+            android:background="@color/background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thumbnail" />
+
+        <!-- Memrupakan tampilan untuk menampilkan thumbnail
+             - Mempunyai warna background yang berasal dari color
+             - Mempunyai lebar sebesar 120dp
+             - Mempunyai tinggi sebesar 10dp
+        -->
+        <View
+            android:layout_width="120dp"
+            android:layout_height="@dimen/placeholderTextHeight"
+            android:layout_marginTop="@dimen/padding_10"
+            android:background="@color/background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

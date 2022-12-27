@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:orientation="horizontal">
+
+    <!-- Merupakan tampilan untuk menampilkan gambar
+         - Mempunyai id berupa ivBookImage
+    -->
+    <ImageView
+        android:id="@+id/ivBookImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+
+    <!-- Merupakan tampilan untuk menampilkan linear layout-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp"
+        >
+
+        <!-- Merupakan tampilan untuk menampilkan teks
+             - Mempunyai id berupa tvBookTitle
+             - Mempunyai warna teks yang berasal dari color
+        -->
+        <TextView
+            android:id="@+id/tvBookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:textColor="@color/purple_500"
+            />
+
+        <!-- Merupakan tampilan untuk menampilkan teks
+             - Mempunyai id berupa tvAuthor
+             - Mempunyai warna teks yang berasal dari color
+        -->
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="italic|bold"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            />
+
+        <!-- Merupakan tampilan untuk menampilkan teks
+             - Mempunyai id berupa tvDescription
+             - Mempunyai warna teks yang berasal dari color
+        -->
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:maxLines="3"
+            android:textColor="@color/teal_700"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

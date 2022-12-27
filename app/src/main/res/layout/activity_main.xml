@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@drawable/whiteflo"
+    tools:context=".book.MainActivity">
+
+    <!-- - Merupakan tampilan untuk menginputkan teks
+         - Mempunyai id yang bernama tiBookName
+         - Mempunyai warna teks dengan kode warna #070707
+     -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiBookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#070707"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- - Merupakan tampilan untuk menginputkan editteks
+             - Mempunyai id yang bernama tiEtBookName
+             - Mempunyai warna teks dengan kode warna #000000
+             - Mempunyai teks hint berupa Search for a book
+        -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiEtBookName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CDA988"
+            android:hint="Search for a book..."
+            android:maxLines="1"
+            android:textColor="#000000" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- - Merupakan tampilan untuk menampilkan recycler View agar bisa digulir
+         - Mempunyai id berupa recyclerView
+     -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="?attr/actionBarSize"
+        app:layout_constraintTop_toBottomOf="@id/tiBookName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

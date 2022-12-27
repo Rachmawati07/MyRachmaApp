@@ -1,0 +1,21 @@
+<!-- untuk menampilkan teks yang telah masukan pada tampilan layout -->
+<resources>
+    <string name="app_name">MyRachmaApp</string>
+    <string name="masukkan_username">Masukkan Username</string>
+    <string name="masukkan_password">Masukkan Password</string>
+    <string name="button_Login">Login</string>
+    <string name="btn_readnews">Read News</string>
+    <string name="btn_book">Search Books</string>
+    <string name="btn_profile">My Profile</string>
+    <string name="textNama">Nama : Rachmawati</string>
+    <string name="textNim">Nim : 203110036</string>
+    <string name="textProdi">Prodi : RPLA</string>
+    <string name="textJenjang">Jenjang : D3</string>
+    <string name="textMyProfile">My Profile</string>
+    <string name="buttonHome">Home</string>
+    <string name="imageMe">TODO</string>
+    <string name="imagePurpleFlo">TODO</string>
+    <string name="imageTulipPink">TODO</string>
+    <string name="imagePinkTulip">TODO</string>
+    <string name="imageRantingSakura">TODO</string>
+</resources>

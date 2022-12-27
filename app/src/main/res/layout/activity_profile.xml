@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    tools:layout_editor_absoluteX="-15dp"
+    tools:layout_editor_absoluteY="0dp"
+    android:background="@drawable/rose">
+
+    <!-- Ini adalah bagian button untuk menampilkan tombol pada projek Rachmawati
+         - Mempunyai id berupa buttonHome
+         - Tombol ini bertuliskan Home
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <Button
+        android:id="@+id/buttonHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonHome"
+        android:textStyle="bold"
+        app:backgroundTint="#2d1c0f"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textJenjang"
+        app:layout_constraintVertical_bias="0.216" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Rachmawati
+         - Mempunyai id berupa textMyProfile
+         - Untuk menampilkan keluaran berupa tulisan My Profile
+         - Menggunakan font berupa cursive
+         - Mempunyai ukuran teks sebesar 60sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textMyProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="cursive"
+        android:text="@string/textMyProfile"
+        android:textColor="#151515"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageMe
+         - Gambar yang ditampilkan berupa gambar pribadi
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 164dp dengan lebar 162dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageMe"
+        android:layout_width="162dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/imageMe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMyProfile"
+        app:srcCompat="@drawable/me" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Rachmawati
+         - Mempunyai id berupa textNama
+         - Untuk menampilkan keluaran berupa tulisan Nama : Rachmawati
+         - Menggunakan font berupa serif-monospace
+         - Mempunyai ukuran teks sebesar 20sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/textNama"
+        android:textColor="#090909"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMe" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Rachmawati
+         - Mempunyai id berupa textJenjang
+         - Untuk menampilkan keluaran berupa tulisan Jenjang : D3
+         - Menggunakan font berupa serif-monospace
+         - Mempunyai ukuran teks sebesar 20sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+   -->
+    <TextView
+        android:id="@+id/textJenjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/textJenjang"
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textProdi" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Rachmawati
+         - Mempunyai id berupa textNim
+         - Untuk menampilkan keluaran berupa tulisan Nim : 203110036
+         - Menggunakan font berupa serif-monospace
+         - Mempunyai ukuran teks sebesar 20sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textNim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/textNim"
+        android:textColor="#0E0E0E"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNama" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Rachmawati
+         - Mempunyai id berupa textProdi
+         - Untuk menampilkan keluaran berupa tulisan Prodi : RPLA
+         - Menggunakan font berupa serif-monospace
+         - Mempunyai ukuran teks sebesar 20sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textProdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/textProdi"
+        android:textColor="#0E0E0E"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNim" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imagePurpleFlo
+         - Gambar yang ditampilkan berupa gambar bunga sakura berwarna ungu
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 69dp dengan lebar 92dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imagePurpleFlo"
+        android:layout_width="92dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@string/imagePurpleFlo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/purpleflo"
+        tools:ignore="ImageContrastCheck" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageRantingSakura
+         - Gambar yang ditampilkan berupa gambar ranting bunga sakura
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 130dp dengan lebar 185dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageRantingSakura"
+        android:layout_width="185dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="268dp"
+        android:contentDescription="@string/imageRantingSakura"
+        app:layout_constraintBottom_toBottomOf="@+id/textNama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rantingsakura" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <!-- - Merupakan edit text untuk username
+         - Mempunyai id berupa textUsername
+         - Mempunyai inputType berupa textPersonName
+         - Mempunyai ukuran teks sebesar 20sp
+         - Mempunyai warna teks dengan kode warna #000000
+    -->
+    <EditText
+        android:id="@+id/textUsername"
+        android:layout_width="316dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints=""
+        android:hint="@string/masukkan_username"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#2C2C2C"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textJudul" />
+
+    <!-- Button untuk login
+        - Mempunyai id berupa buttonLogin
+        - Mempunyai ukuran teks sebesar 16sp
+        - Tulisan dibold
+        - Tulisan dikelompokkan berdasarkan string
+   -->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="130dp"
+        android:layout_height="57dp"
+        android:text="@string/button_Login"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#2d1c0f"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPassword"
+        app:layout_constraintVertical_bias="0.34"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <!-- - Edit text untuk password
+         - Mempunyai id berupa textPassword
+         - Mempunyai input type berupa textpassword
+         - Mempunyai warna dengan kode warna #00000
+         - Mempunyai ukuran teks sebesar 20sp
+    -->
+    <EditText
+        android:id="@+id/textPassword"
+        android:layout_width="313dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="68dp"
+        android:autofillHints=""
+        android:hint="@string/masukkan_password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#2C2C2C"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUsername" />
+
+    <!-- - text view untuk judul
+         - Mempunyai id berupa textJudul
+         - Mempunyai ukuran teks sebesar 25sp
+         - Tulisan dibold
+         - Mempunyai font family berypa serif-monospace
+         - Mempunyai warna dengan kode warna #014E5C
+    -->
+    <TextView
+        android:id="@+id/textJudul"
+        android:layout_width="318dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="108dp"
+        android:fontFamily="casual"
+        android:text="Read News and Search Books"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Bagian untuk menampilkan warna berdasarkan kode warna
+     - Masing-masing color mempunyai name yang berbeda
+-->
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#593b17</color>
+    <color name="purple_700">#2d1c0f</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#dddddd</color>
+    <color name="colorPrimary">#F8CB42</color>
+    <color name="colorPrimaryDark">#424242</color>
+    <color name="colorAccent">#353333</color>
+</resources>

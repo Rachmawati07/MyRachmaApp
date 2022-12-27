@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Bagian yang berupa resource XML yang berisi nilai dimensi
+     pada setiap name yang dideklarasikan dan disertai dengan unit ukurannya -->
+<resources>
+    <dimen name="activityPadding">16dp</dimen>
+    <dimen name="placeholderImageWidth">160dp</dimen>
+    <dimen name="placeholderImageHeight">90dp</dimen>
+    <dimen name="placeholderTextHeight">16dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+</resources>
