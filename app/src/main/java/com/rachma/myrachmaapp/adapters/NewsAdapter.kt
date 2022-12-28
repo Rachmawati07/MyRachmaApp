@@ -11,6 +11,7 @@ import com.rachma.myrachmaapp.R
 import com.rachma.myrachmaapp.data.models.Article
 import kotlinx.android.synthetic.main.item_article_preview.view.*
 
+// Baris kode berikut merupakan bagian adapter untuk menampilkan data ke recycler view
 // Untuk mendeklarasikan class yang bernama NewsAdapter
 // Dan mendeklarasikan variabel onClickListener
 class NewsAdapter (private val onClickListener: OnClickListener):
