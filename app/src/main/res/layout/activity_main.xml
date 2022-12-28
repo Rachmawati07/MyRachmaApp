@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="5dp"
-    android:background="@drawable/whiteflo"
+    android:background="@drawable/bg2"
     tools:context=".book.MainActivity">
 
     <!-- - Merupakan tampilan untuk menginputkan teks
