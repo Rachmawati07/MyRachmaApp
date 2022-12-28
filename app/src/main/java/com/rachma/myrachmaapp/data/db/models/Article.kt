@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 import com.rachma.myrachmaapp.data.models.Source
 import java.io.Serializable
 
-// Baris kode berikut merupakan entity(field)
+// TODO 9 : Baris kode berikut merupakan bagian Entity(field)
 // Untuk mendeklarasikan entitas dengan nama tabel berupa articles
 @Entity(tableName = "articles")
 // Untuk mendeklarasikan kelas data dengan nama Article

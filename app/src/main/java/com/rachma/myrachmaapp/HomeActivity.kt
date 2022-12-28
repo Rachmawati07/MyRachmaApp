@@ -7,7 +7,7 @@ import com.rachma.myrachmaapp.book.MainActivity
 import com.rachma.myrachmaapp.databinding.ActivityHomeBinding
 import com.rachma.myrachmaapp.ui.NewsActivity
 
-// Baris berikut merupakan bagian view untuk data binding
+// TODO 1 : Baris kode berikut merupakan bagian View untuk data binding
 // Untuk mendeklarasikan class yang bernama HomeActivity
 class HomeActivity : AppCompatActivity() {
 

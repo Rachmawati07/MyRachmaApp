@@ -4,7 +4,7 @@ import com.rachma.myrachmaapp.data.db.ArticleDatabase
 import com.rachma.myrachmaapp.data.models.Article
 import com.rachma.myrachmaapp.data.remote.RetrofitClient
 
-// Baris berikut adalah Bagian Repository
+// TODO 6 : Baris berikut adalah Bagian Repository
 // Untuk mendeklarasikan class yang bernama NewsRepository
 class NewsRepository(
     // Untuk mendeklarasikan variabel yang bernama db yang berisi articledatabase

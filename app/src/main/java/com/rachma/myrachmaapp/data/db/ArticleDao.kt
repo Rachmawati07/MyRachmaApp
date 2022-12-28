@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.rachma.myrachmaapp.data.models.Article
 
-// Baris kode berikut merupakan Dao(query)
+// TODO 8 : Baris kode berikut merupakan bagian Dao(query)
 // Untuk mendeklarasikan Dao
 @Dao
 // Mendeklarasikan interface yang bernama ArticleDao

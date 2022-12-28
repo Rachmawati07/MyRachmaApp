@@ -18,7 +18,7 @@ import kotlinx.coroutines.launch
 import retrofit2.Response
 import java.io.IOException
 
-// Kode berikut adalah ViewModel yang terdapat live data
+// TODO 2 : Kode berikut adalah bagian ViewModel yang terdapat live data
 // Untuk mendeklarasikan class yang bernama NewsViewModel
 class NewsViewModel(
     // Untuk mendeklarasikan value parameter yang berupa app

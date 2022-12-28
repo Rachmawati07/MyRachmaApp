@@ -6,7 +6,7 @@ import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-// Baris kode berikut adalah bagian Network Api
+// TODO 5 : Baris kode berikut adalah bagian Network Api
 //https://newsapi.org/v2/top_headlines?country=us&apiKey=80c2e0be242c4772a3fb66327464e527
 // Untuk mendeklarasikan interface yang bernama NewsApi
 interface NewsApi {

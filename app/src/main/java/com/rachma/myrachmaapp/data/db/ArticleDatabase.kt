@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.room.*
 import com.rachma.myrachmaapp.data.models.Article
 
-// Baris kode berikut adalah bagian RoomDB untuk konfigurasi database
+// TODO 7 : Baris kode berikut adalah bagian RoomDB untuk konfigurasi database
 // Untuk mendeklarasikan database dengan entity yang berupa array dari class Article dan mempunyai versi berupa 1
 @Database(entities = [Article::class], version = 5)
 @TypeConverters(Converter::class)
